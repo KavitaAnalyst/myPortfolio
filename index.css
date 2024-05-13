@@ -1,0 +1,501 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body ,html {
+    width:100%;
+    background-color:#23263a;
+    color:#f98e47;
+    
+    
+}
+
+
+
+nav{
+    width:100%;
+    height:10%;
+    background:#212336;
+    padding:4px 0px;
+    position:fixed;
+    top:0;
+    left:0;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    z-index: 10;
+    
+    
+    }
+    .logo{
+        margin-left: 20px;
+    }
+    .logo img{
+    width:60px;
+    border-radius: 50%;
+    margin-top:0.8vw;
+    
+    }
+    nav ul{
+        margin-right: 20px;
+    }
+    nav ul li{
+        display: inline-block;
+        padding:10px;
+        list-style: none;
+        margin: 5px 20px;
+        font-size: 20px;
+    }
+    #toggleBtn{
+        display: none;
+        width:30px;
+    }
+    button img{
+        width:30px;
+        background-color: #e67327;
+    }
+   
+/* Add media query for responsiveness */
+@media screen and (max-width: 768px) {
+    /* Hide the navigation links */
+    nav ul {
+        margin-top: 30px;
+      display: none;
+    }
+    /* Display the toggle button */
+    #toggleBtn {
+      display:block;
+    }
+  
+      ul li {
+        margin: 10px 0;
+      }
+  }
+  
+  /* Style the toggle button */
+  button {
+    display:block;
+    background-color:transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Style the icon inside the toggle button */
+  button i {
+    color: #ffffff;
+    font-size: 24px;
+  }
+  
+  /* Adjustments for smaller screens */
+  @media screen and (max-width:1000px) {
+    nav {
+      padding: 10px; /* Adjust as needed */
+    }
+   nav ul {
+      display: none;
+      flex-direction: column;
+      text-align: center;
+      padding-top: 20px;
+    }
+    ul li {
+      margin: 10px 0;
+    }
+  }
+  
+  /* Toggle the display of the navigation links */
+  @media screen and (max-width: 768px) {
+    ul.show {
+      display: flex;
+    }
+  }
+  
+
+
+.page1{
+    width:100%;
+    height:70vh;
+    padding-top:300px;
+    padding-left:40px;
+    display: flex;
+    align-items: center;
+    
+    
+}
+.page1-left{
+    width:70%;
+}
+.page1-left h1{
+    font-size:5vw;
+}
+.page1-left p{
+    font-size:1.5vw;
+}
+
+.page1-right{
+    width:50%;
+}
+.page1-right img{
+    width:80%;
+    height:370px;
+    border-radius: 40px;
+}
+
+
+
+
+
+.page2{
+    margin-top: 10vw;
+    width:100%;
+    padding:2vw;
+}
+
+
+#card-box{
+    margin: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.card i{
+    margin:9px 10px;
+    width:45px;
+    height:55px;
+    
+}
+.card-body{
+    height:40vw;
+    margin-top: -30px;
+}
+
+.card-text{
+    font-size: 18px;
+    height:11.4vw;
+}
+
+
+.card{
+    background-color: #212336;
+    margin:10px;
+    width:60vh;
+    height:50vh; 
+    text-wrap: wrap;
+    text-align:left;
+    box-shadow: 8px 8px 2px 2px #2b2d46;
+   
+}
+.card-img-top{
+    filter: invert(1);
+}
+
+/* skills */
+
+.skills {
+    padding-top: 20px;
+    width:100%;
+    margin: auto;
+
+  }
+  
+  .skill {
+    margin-bottom: 10px;
+  }
+  
+  .skill-name {
+    font-weight: bold;
+  }
+  
+  .skill-bar {
+    background-color: #f0f0f0;
+    height:1.8vw;
+    border-radius: 30px;
+  }
+  
+  .skill-level {
+    background-color:#e67327;
+    height: 100%;
+    border-radius:30px;
+    text-align: center;
+    padding-top:4px;
+    color: white;
+    line-height: 20px;
+  }
+
+@media screen and (min-width:760px) {
+     .page2{
+        width:100%;
+        
+        display: flex;
+        flex-direction: column;
+     }
+     .card-box{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+     }
+
+
+
+}
+
+
+
+
+.Exp{
+    height:70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* overflow:auto; */
+}
+.ExpHeading {
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.ExpHeading img{
+    width:50px;
+    height:50px;
+    filter: invert(1);
+    
+}
+
+.headingEX{
+
+    margin: 5px 30px;
+    display: flex;
+    align-items: center;
+    gap:20px
+}
+
+.headingEX h2{
+    font-size: 30px;
+}
+
+.Experience{
+    margin-top:0.5vw;
+    padding:2vw;
+    width:50%;
+    height:70vw;
+    border-right:1px solid black;
+   
+    line-height:1vw;
+}
+
+.Experience img{
+    width:30px;
+    height:30px;
+    filter: invert(1);
+    
+}
+.Experience p {
+    margin-left: 1vw;
+    text-align: left;
+    overflow: hidden;
+    
+}
+.cert{
+    margin-top:0.5vw;
+    padding:2vw;
+    width:50%;
+    height:70vw;
+    border-right:1px solid black;
+    line-height:3vw;
+    margin-top:1vw;
+   
+}
+
+.cert img{
+    width:30px;
+    height:30px;
+    filter: invert(1);
+   
+    
+}
+.cert p {
+    margin-left: 1vw;
+    text-align: left;
+ 
+    
+}
+
+a{
+    text-decoration: none;
+    color:#e67327;
+    margin-left:30px;
+}
+
+a:hover {
+    text-decoration: none;
+    color:#e67327;
+}
+.internship{
+        margin-top:1vw;
+            padding:2vw;
+            width:50%;
+            height:70vw;
+            border-bottom:1px solid black;
+           
+            line-height:1vw; 
+     
+        
+}
+
+.footer{
+    
+    width:100%;
+    height:10vw;
+
+}
+.footer h5{
+    padding-top:40px;
+    margin: auto;
+    font-size: 40px;
+}
+
+
+@media screen and (max-width:1500px){
+    .page1{
+        text-align:left;
+        margin-top: -30px;
+    }
+    .page1-left p{
+        font-size:2.5vw;
+       
+        
+      
+    }
+    .page1-left h1{
+        font-size: 35px;
+      
+    }
+    .page2{
+        width:100%;
+        
+    }
+    .page2 h1{
+        font-size: 35px;
+        text-align: center;
+    }
+  
+    .card-box{
+        width:100%;
+        display:none;
+       
+        flex-wrap: nowrap;
+    }
+    .card{
+        width:100%;
+    }
+}
+
+/* Add media queries for responsiveness */
+
+@media screen and (max-width:1200px) {
+   
+    .page1 {
+      padding-top: -150px; 
+      padding-left: 20px; 
+    }
+    .page1-left h1 {
+      font-size: 30px; 
+    }
+    .page1-left p {
+      font-size: 14px; 
+    }
+    .page1-right img {
+      width: 100%; 
+      height: auto;
+      border-radius: 20px; 
+    }
+    .page2 {
+      margin-top: 5vw; 
+      padding: 1vw; 
+      margin-bottom: 4vw;
+    }
+    #card-box{
+      
+        width:auto;
+        flex-direction:column;
+        
+    }
+    .card {
+      width: 80%;
+      margin: 10px auto; 
+      
+    }
+    .card-body {
+      height: auto;
+    }
+    .card-text {
+      font-size: 15px; 
+      height: auto; 
+    }
+    .skill-bar {
+        background-color: #f0f0f0;
+        height:4vw;
+        border-radius: 30px;
+      }
+      
+      .skill-level {
+        background-color:#e67327;
+        height: 100%;
+        border-radius:30px;
+        text-align: center;
+        padding-top:1.5px;
+        color: white;
+        line-height: 20px;
+        font-size:30px;
+      }
+.Exp {
+      flex-direction: column; 
+      align-items: center; 
+      justify-content: center; 
+      
+    }
+    .ExpHeading {
+      flex-direction: column; 
+      align-items: center;
+      justify-content: center; 
+    }
+    .headingEX {
+      flex-direction: column; /* Adjust as needed */
+      align-items: center; /* Adjust as needed */
+      justify-content: center; /* Adjust as needed */
+      margin: 5px auto; /* Adjust as needed */
+    }
+    .headingEX h2 {
+      font-size: 20px; /* Adjust as needed */
+    }
+    .Experience,
+    .cert {
+     margin-top: -30px;
+      width: 90%; /* Adjust as needed */
+      height: auto; /* Adjust as needed */
+    }
+    .Experience p,
+    .cert p,
+    .cert li {
+      font-size: 15px; /* Adjust as needed */
+      margin-left: 0; /* Adjust as needed */
+      text-align:left; /* Adjust as needed */
+      line-height: 20px; /* Adjust as needed */
+    }
+    .footer {
+        margin-top: -40px;
+    }
+    .footer h5 {
+   
+      font-size: 20px; /* Adjust as needed */
+      padding-top: 20px; /* Adjust as needed */
+    }
+  }
+  
+ 
+  
